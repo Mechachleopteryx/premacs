@@ -30,9 +30,9 @@
 
 #+END_SRC
 
-* Chemacs
+* Premacs
 
-Chemacs 2 is an Emacs profile switcher, it makes it easy to run multiple Emacs
+Premacs is a fork of Chemacs 2, an Emacs profile switcher -- it makes it easy to run multiple Emacs
 configurations side by side.
 
 Think of it as a bootloader for Emacs.
@@ -45,7 +45,7 @@ script, =~/.emacs/early-init.el=, which runs earlier in the boot process, and
 can be used for things that should happen very early on, like tweaking the GC,
 or disabling UI elements.
 
-Chemacs 2 supports =early-init.el=, Chemacs 1 does not. This does also imply
+Chemacs 2 (and therefore premax, oops, i mean premacs) supports =early-init.el=, Chemacs 1 does not. This does also imply
 that Chemacs 2 needs to be installed as =~/.emacs.d= (a directory), rather than
 simply linking it to =~/.emacs= (a single file).
 
@@ -79,7 +79,7 @@ you have an =~/.emacs= startup script then move that out of the way as well.
 #+BEGIN_SRC shell
   [ -f ~/.emacs ] && mv ~/.emacs ~/.emacs.bak
   [ -d ~/.emacs.d ] && mv ~/.emacs.d ~/.emacs.default
-  git clone https://github.com/plexus/chemacs2.git ~/.emacs.d
+  git clone https://github.com/Mechachleopteryx/premacs.git ~/.emacs.d
 #+END_SRC
 
 Note that this is different from Chemacs 1. Before Chemacs installed itself as
